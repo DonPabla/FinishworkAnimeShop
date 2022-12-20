@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Anime Shop</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/global.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/product.css">
+	<link rel="stylesheet" href="css/products-grid.css">
+	<link rel="stylesheet" href="css/simplebar.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<nav class="header__nav nav">
+				<ul class="nav__list">
+
+					
+					<li class="nav__item"><a href="" class="nav__link">Контакты</a></li>
+					<li class="nav__item"><a href="" class="nav__link">Акции</a></li>
+					<li class="nav__item"><a href="" class="nav__link">Оплата и доставка</a></li>
+				</ul>
+				<div class="header__cart cart" tabindex="0">
+					<div class="cart__text">
+						Корзина
+						<span class="cart__quantity">0</span>
+					</div>
+					<div class="cart-content">
+						<ul class="cart-content__list" data-simplebar>
+						</ul>
+						<div class="cart-content__bottom">
+							<div class="cart-content__fullprice">
+								<span>Итого:</span>
+								<span class="fullprice">568 789 ₽</span>
+							</div>
+							<div class="cart-content__btn btn" id="open_pop_up">Перейти в корзину</div>
+							
+						
+						</div>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<div class="pop_up" id="pop_up">
+			<div class="pop_up_container">
+				<div class="pop_up_body" id="pop_up_body">
+					<p>Оставить заказ</p>
+					<form action="">
+					<input type="text" placeholder="Имя">
+					<input type="text" placeholder="Адрес">
+					<input type="text" placeholder="Телефон">
+					<button>
+						Оставить заказ
+					</button>
+				</form>
+				<div class="pop_up_close" id="pop_up_close">&#10006</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main class="content">
+
+		<div class="swiper mySwiper">
+			<div class="swiper-wrapper">
+			<div class="swiper-slide"><img src="img/slide1.png"></div>
+			<div class="swiper-slide"><img src="img/slide2.png"></div>
+			<div class="swiper-slide"><img src="img/slide3.png"></div>
+			<div class="swiper-slide"><img src="img/slide4.png"></div>
+			<div class="swiper-slide"><img src="img/slide5.png"></div>
+			<div class="swiper-pagination"></div>
+			</div>
+		</div>
+		<div class="swiper-button-next"></div>
+		<div class="swiper-button-prev"></div>
+
+
+		<div class="container">
+			<div class="products-content grid-container">
+						</div>
+					</div>
+				</div>
+				<ul class="products-grid">
+					<li class="products-grid__item">
+						<article class="product">
+							<a href="#" class="product__image">
+								<div class="product__switch image-switch">
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="img/ram 1.webp"></div>
+									</div>
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="img/ram 2.jpg"></div>
+									</div>
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="img/ram 3.jpg"></div>
+									</div>
+								</div>
+								<ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+							</a>
+							<h3 class="product__title">
+								<a href="#">Фигурка Рам</a>
+							</h3>
+							<div class="product__props">
+								<span class="product__rating">
+									<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z" />
+									</svg>
+									4,5
+								</span>
+								<span class="product__testimonials">63 отзыва</span>
+							</div>
+							<div class="product__info">
+								<span class="product__term">Артикул: 879876</span>
+								<span class="product__available">В наличии: 13 шт</span>
+							</div>
+							<div class="product__price product-price">
+								<span class="product-price__current">19 000 ₽</span>
+								<span class="product-price__old">21 000 ₽</span>
+							</div>
+							<button class="product__btn btn">Добавить в корзину</button>
+						</article>
+					</li>
+					<li class="products-grid__item">
+						<article class="product">
+							<a href="#" class="product__image">
+								<div class="product__switch image-switch">
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="img/yotsuba 1.webp" ></div>
+									</div>
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="img/yotsuba 2.jpg" ></div>
+									</div>
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="img/yotsuba 3.jpg" ></div>
+									</div>
+								</div>
+								<ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+							</a>
+							<h3 class="product__title">
+								<a href="#">Фигурка Ёцубы</a>
+							</h3>
+							<div class="product__props">
+								<span class="product__rating">
+									<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z" />
+									</svg>
+									4,5
+								</span>
+								<span class="product__testimonials">23 отзыва</span>
+							</div>
+							<div class="product__info">
+								<span class="product__term">Артикул: 879874</span>
+								<span class="product__available">В наличии: 17 шт</span>
+							</div>
+							<div class="product__price product-price">
+								<span class="product-price__current">23 789 ₽</span>
+								<span class="product-price__old">25 578 ₽</span>
+							</div>
+							<button class="product__btn btn">Добавить в корзину</button>
+						</article>
+					</li>
+					<li class="products-grid__item">
+						<article class="product">
+							<a href="#" class="product__image">
+								<div class="product__switch image-switch">
+									<div class="image-switch__item">
+											<div class="image-switch__img"><img src="img/satoru 1.webp" ></div>
+										</div>
+										<div class="image-switch__item">
+											<div class="image-switch__img"><img src="img/satoru 2.jpg" ></div>
+										</div>
+										<div class="image-switch__item">
+											<div class="image-switch__img"><img src="img/satoru 3.jpg" ></div>
+										</div>
+									</div>
+									<ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+								</a>
+								<h3 class="product__title">
+									<a href="#">Фигурка Годжу</a>
+								</h3>
+							</h3>
+							<div class="product__props">
+								<span class="product__rating">
+									<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z" />
+									</svg>
+									4,5
+								</span>
+								<span class="product__testimonials">23 отзыва</span>
+							</div>
+							<div class="product__info">
+								<span class="product__term">Артикул: 879866</span>
+								<span class="product__available">В наличии: 13 шт</span>
+							</div>
+							<div class="product__price product-price">
+								<span class="product-price__current">19 789 ₽</span>
+								<span class="product-price__old">24 578 ₽</span>
+							</div>
+							<button class="product__btn btn">Добавить в корзину</button>
+						</article>
+					</li>
+					<li class="products-grid__item">
+						<article class="product">
+							<a href="#" class="product__image">
+								<div class="product__switch image-switch">
+									<div class="image-switch__item">
+											<div class="image-switch__img"><img src="img/jojo 1.webp"></div>
+										</div>
+										<div class="image-switch__item">
+											<div class="image-switch__img"><img src="img/jojo 2.jpg" ></div>
+										</div>
+										<div class="image-switch__item">
+											<div class="image-switch__img"><img src="img/jojo 3.jpg" ></div>
+										</div>
+									</div>
+									<ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+								</a>
+								<h3 class="product__title">
+									<a href="#">Фигурка ДжоДжо</a>
+								</h3>
+							<div class="product__props">
+								<span class="product__rating">
+									<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z" />
+									</svg>
+									4,5
+								</span>
+								<span class="product__testimonials">23 отзыва</span>
+							</div>
+							<div class="product__info">
+								<span class="product__term">Артикул: 879876</span>
+								<span class="product__available">В наличии: 13 шт</span>
+							</div>
+							<div class="product__price product-price">
+								<span class="product-price__current">25 789 ₽</span>
+								<span class="product-price__old">27 578 ₽</span>
+							</div>
+							<button class="product__btn btn">Добавить в корзину</button>
+						</article>
+					</li>
+					<li class="products-grid__item">
+						<article class="product">
+							<a href="#" class="product__image">
+								<div class="product__switch image-switch">
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="img/miku 1.webp"></div>
+									</div>
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="img/miku 2.webp"></div>
+									</div>
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="img/miku 3.jpg"></div>
+									</div>
+								</div>
+								<ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+							</a>
+							<h3 class="product__title">
+								<a href="#">Фигурка Мику</a>
+							</h3>
+							<div class="product__props">
+								<span class="product__rating">
+									<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z" />
+									</svg>
+									4,5
+								</span>
+								<span class="product__testimonials">53 отзыва</span>
+							</div>
+							<div class="product__info">
+								<span class="product__term">Артикул: 879876</span>
+								<span class="product__available">В наличии: 18 шт</span>
+							</div>
+							<div class="product__price product-price">
+								<span class="product-price__current">13 789 ₽</span>
+								<span class="product-price__old">19 578 ₽</span>
+							</div>
+							<button class="product__btn btn">Добавить в корзину</button>
+						</article>
+					</li>
+					<li class="products-grid__item">
+						<article class="product">
+							<a href="#" class="product__image">
+								<div class="product__switch image-switch">
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="img/mash 1.webp"></div>
+									</div>
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="img/mash 2.webp"></div>
+									</div>
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="img/mash 3.webp"></div>
+									</div>
+								</div>
+								<ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+							</a>
+							<h3 class="product__title">
+								<a href="#">Фигурка Маш</a>
+							</h3>
+							<div class="product__props">
+								<span class="product__rating">
+									<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z" />
+									</svg>
+									4,5
+								</span>
+								<span class="product__testimonials">83 отзыва</span>
+							</div>
+							<div class="product__info">
+								<span class="product__term">Артикул: 879876</span>
+								<span class="product__available">В наличии: 13 шт</span>
+							</div>
+							<div class="product__price product-price">
+								<span class="product-price__current">19 789 ₽</span>
+								<span class="product-price__old">23 578 ₽</span>
+							</div>
+							<button class="product__btn btn">Добавить в корзину</button>
+						</article>
+					</li>
+					<li class="products-grid__item">
+						<article class="product">
+							<a href="#" class="product__image">
+								<div class="product__switch image-switch">
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="img/tanji1.webp"></div>
+									</div>
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="img/tanji2.webp"></div>
+									</div>
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="img/tanji3.webp"></div>
+									</div>
+								</div>
+								<ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+							</a>
+							<h3 class="product__title">
+								<a href="#">Фигурка Танджиро</a>
+							</h3>
+							<div class="product__props">
+								<span class="product__rating">
+									<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z" />
+									</svg>
+									4,5
+								</span>
+								<span class="product__testimonials">43 отзыва</span>
+							</div>
+							<div class="product__info">
+								<span class="product__term">Артикул: 879876</span>
+								<span class="product__available">В наличии: 13 шт</span>
+							</div>
+							<div class="product__price product-price">
+								<span class="product-price__current">9 789 ₽</span>
+								<span class="product-price__old">10 578 ₽</span>
+							</div>
+							<button class="product__btn btn">Добавить в корзину</button>
+						</article>
+					</li>
+					<li class="products-grid__item">
+						<article class="product">
+							<a href="#" class="product__image">
+								<div class="product__switch image-switch">
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="img/shoto1.webp"></div>
+									</div>
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="img/shoto2.webp"></div>
+									</div>
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="img/shoto3.webp"></div>
+									</div>
+								</div>
+								<ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+							</a>
+							<h3 class="product__title">
+								<a href="#">Фигурка Тодороки</a>
+							</h3>
+							<div class="product__props">
+								<span class="product__rating">
+									<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z" />
+									</svg>
+									4,5
+								</span>
+								<span class="product__testimonials">73 отзыва</span>
+							</div>
+							<div class="product__info">
+								<span class="product__term">Артикул: 879876</span>
+								<span class="product__available">В наличии: 13 шт</span>
+							</div>
+							<div class="product__price product-price">
+								<span class="product-price__current">14 789 ₽</span>
+								<span class="product-price__old">16 578 ₽</span>
+							</div>
+							<button class="product__btn btn">Добавить в корзину</button>
+						</article>
+					</li>
+					<li class="products-grid__item">
+						<article class="product">
+							<a href="#" class="product__image">
+								<div class="product__switch image-switch">
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="img/makima1.webp"></div>
+									</div>
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="img/makima2.webp"></div>
+									</div>
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="img/makima3.webp"></div>
+									</div>
+								</div>
+								<ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+							</a>
+							<h3 class="product__title">
+								<a href="#">Фигурка Макимы</a>
+							</h3>
+							<div class="product__props">
+								<span class="product__rating">
+									<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z" />
+									</svg>
+									4,5
+								</span>
+								<span class="product__testimonials">93 отзыва</span>
+							</div>
+							<div class="product__info">
+								<span class="product__term">Артикул: 879876</span>
+								<span class="product__available">В наличии: 13 шт</span>
+							</div>
+							<div class="product__price product-price">
+								<span class="product-price__current">11 789 ₽</span>
+								<span class="product-price__old">12 578 ₽</span>
+							</div>
+							<button class="product__btn btn">Добавить в корзину</button>
+						</article>
+					</li>
+				</ul>
+			</div>
+			<div class="height"></div>
+		</div>
+	</main>
+	<script src="js/script.js"></script>
+	<script src="js/simplebar.js"></script>
+	<script src="js/product.js"></script>
+	<script src="js/fixed-block.js"></script>
+	<script src="js/cart.js"></script>
+</body>
+</html>
